@@ -8,6 +8,7 @@ import Post from "./Components/AddPost"
 import Posts from "./Components/Posts"
 import SwiggyHome from "./Swiggy/SwiggyHome"
 import SwiggyDescription from "./Swiggy/SwiggyDescription"
+import SwiggyAbout from "./Swiggy/SwiggyAbout"
 export default function App()
 {
   return(
@@ -25,6 +26,7 @@ export default function App()
       <Link to="/posts" style={{textDecoration:"none"}}> <Button  style={{color:"white"}}>Posts</Button></Link>
       <Link to="/practice" style={{textDecoration:"none"}}> <Button  style={{color:"white"}}>Practice</Button></Link>
       <Link to="/swiggyhome" style={{textDecoration:"none"}}> <Button  style={{color:"white"}}>Swiggy</Button></Link>
+      <Link to="/swiggyabout" style={{textDecoration:"none"}}> <Button  style={{color:"white"}}>SwiggyAbout</Button></Link>
       </div>
       </Box>
       
@@ -35,6 +37,7 @@ export default function App()
       <Route path="/practice" element={<Practice/>}/>
       <Route path="swiggyhome" element={<SwiggyHome/>}></Route>
       <Route path="swiggydescription/:id" element={<SwiggyDescription/>}></Route>
+      <Route path="/swiggyabout" element={<SwiggyAbout/>}></Route>
       </Routes>
     </Router>
     </>
